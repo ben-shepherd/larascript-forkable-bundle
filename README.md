@@ -1,8 +1,8 @@
 # Larascript Bundle Template
 
-This is a template repository for creating Larascript bundles. Follow the steps below to create your own bundle.
+This is a template repository for creating Larascript packages. Follow the steps below to create your own package.
 
-## Creating a New Bundle
+## Creating a New Package
 
 ### 1. Fork or Clone the Repository
 
@@ -12,19 +12,16 @@ This is a template repository for creating Larascript bundles. Follow the steps 
 
 **Option B: Clone the repository**
 ```bash
-git clone https://github.com/ben-shepherd/larascript-forkable-bundle-original.git
+git clone git@github.com:ben-shepherd/larascript-forkable-bundle.git
 ```
 
 ### 2. Rename the Directory
 
-Change the cloned directory name to match your bundle name:
+Change the cloned directory name to match your package name:
 
 ```bash
-# If you cloned the repo
-mv larascript-forkable-bundle-original larascript-your-bundle-name
-
-# Example:
-mv larascript-forkable-bundle-original larascript-components-bundle
+# If you cloned the repo. Example:
+mv larascript-forkable-bundle larascript-component-name
 ```
 
 ### 3. Update package.json
@@ -33,17 +30,17 @@ Edit the `package.json` file and update the following fields:
 
 ```json
 {
-  "name": "@your-username/larascript-your-bundle-name",
-  "description": "Your bundle description here",
+  "name": "@your-username/larascript-your-package-name",
+  "description": "Your description here",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/larascript-your-bundle-name"
+    "url": "git+https://github.com/your-username/larascript-your-package-name"
   }
 }
 ```
 
 **Required changes:**
-- `name`: Change from "PLACEHOLDER" to your bundle name (e.g., "larascript-components-bundle")
+- `name`: Change from "PLACEHOLDER" to your package name (e.g., "larascript-components")
 - `description`: Replace "PLACEHOLDER DESCRIPTION" with a meaningful description
 - `repository.url`: Update to point to your new repository URL
 
@@ -59,10 +56,10 @@ git remote set-url origin https://github.com/your-username/larascript-your-bundl
 
 If you forked the repository:
 1. Go to your forked repository on GitHub
-2. Update the repository name to match your bundle name
+2. Update the repository name to match your package name
 3. Update the repository description
 
-### 6. Initialize Your Bundle
+### 6. Initialize Your Package
 
 ```bash
 # Install dependencies
@@ -75,9 +72,9 @@ npm test
 npm run build
 ```
 
-### 7. Customize Your Bundle
+### 7. Customize Your Package
 
-- Add your bundle-specific code to `src/index.ts`
+- Add your package-specific code to `src/index.ts`
 - Update tests in the `src/tests/` directory
 - Modify configuration files as needed (`tsconfig.json`, `jest.config.js`, etc.)
 
@@ -128,8 +125,8 @@ export * from './types';
 
 ### 8. Update This README
 
-Replace this content with documentation specific to your bundle:
-- What the bundle does
+Replace this content with documentation specific to your package:
+- What the package does
 - How to install and use it
 - Examples and API documentation
 - Contributing guidelines
@@ -192,4 +189,4 @@ When ready to publish:
 
 ## Support
 
-For questions about this template or Larascript bundles in general, please refer to the main Larascript documentation or create an issue in the original repository.
+For questions about this template or Larascript packages in general, please refer to the main Larascript documentation or create an issue in the original repository.
